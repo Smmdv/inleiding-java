@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body{
+            background-color: #c2c2de;
+        }
+        .flex-container {
+            background-color: green;
+            border: 3px solid black;
+            height:80vh;
+
+        }
+        .flex-container > div {
+            border: 2px dashed black;
+
+        }
+        .flex-container > div {
+            border: 2px dashed black;
+
+
+        }
+        .flex-container > div:nth-child(4n) {
+            background-color: red;
+
+        }
+        .flex-container > div:nth-child(4n+1) {
+            background-color: hotpink;
+
+        }
+        .flex-container > div:nth-child(4n+2) {
+            background-color: blue;
+
+        }
+        .flex-container > div:nth-child(4n+3){
+            background-color: purple;
+
+        }
+        .flex-container {
+            display: flex;
+            flex-direction:row;
+            justify-content: space-evenly;
+            align-items: stretch;
+            flex-wrap: wrap;
+            align-content: normal;
+
+        }
+        .flex-container > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 1;
+
+        }
+        .flex-container > div.big {
+            order: 2;
+        }
+        .flex-container > div.bigger {
+            order: 3;
+
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="flex-container">
+<div class="big bigger">A</div>
+<div class="big">B</div>
+<div class="big">C</div>
+<div>D</div>
+<div>E</div>
+<div>F</div>
+<div>G</div>
+<div>H</div>
+<div>i</div>
+    <div>j</div>
+</div>
+</body>
+</html>
